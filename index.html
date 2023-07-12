@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="person-selector">
+      <button class="button person-selector-button active-person" id="Thing1-selector">Thing 1</button>
+      <button class="button person-selector-button" id="Thing2-selector">Thing 2</button>
+    </div>
+    <div class="chat-container">
+      <h2 class="chat-header">Thing 1 chatting...</h2>
+
+      <div class="chat-messages">
+        <div class="message blue-bg">
+          <div class="message-sender">Thing 1</div>
+          <div class="message-text">Hi</div>
+          <div class="message-timestamp">12:01 AM</div>
+        </div>
+        <div class="message green-bg">
+          <div class="message-sender">Thing 2</div>
+          <div class="message-text">Hello</div>
+          <div class="message-timestamp">12:05 AM</div>
+        </div>
+      </div>
+
+      <form action="" class="chat-input-form">
+        <input type="text" class="chat-input" required placeholder="Type here, Thing1...">
+        <button type="submit" class="send-button">Send</button>
+      </form>
+      <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+   
+    <script src="app.js"></script>
+  </body>
+</html>
